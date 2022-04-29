@@ -66,6 +66,20 @@ background-image: url(../img/ima14.png);
 background-repeat: no-repeat;
 background-size: cover;
 color: azure;
+animation-duration: 2s;
+animation-name: aparecer;
+animation-delay: 2s;
+animation-direction: alternate;
+animation-iteration-count: infinite;
+}
+
+@keyframes aparecer {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
 }
 .galeria{
     height: 800px;
@@ -124,7 +138,21 @@ color: azure;
     background-repeat: no-repeat;
     background-size: cover;
     color: azure;
- }
+    animation-duration: 2s;
+    animation-name: aparecerr;
+    animation-delay: 2s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+}
+
+@keyframes aparecerr {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
  .fondito{
      height: 90vh;
      background-image: url(../img/ima15.png);
@@ -190,6 +218,12 @@ color: azure;
     border-radius: 0.3rem;
     font-weight: 600;
     
+}
+input{
+    transition: all 1s;
+}
+input:focus{
+    font-size: 30px;
 }
 .form__input--submit:hover{
     background-color: rgb(117, 81, 12);
