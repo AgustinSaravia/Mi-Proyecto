@@ -161,7 +161,7 @@ animation-iteration-count: infinite;
  }
 .about{
     width: 80%;
-    margin: 2rem auto;
+    margin: 0rem 2rem 0rem 2rem;
 }
 .about__container{
     display: flex;
@@ -219,6 +219,39 @@ animation-iteration-count: infinite;
     font-weight: 600;
     
 }
+.sub3{
+    text-align: center;
+font-size: 120px;
+background-image: url(../img/ima14.png);
+background-repeat: no-repeat;
+background-size: cover;
+color: azure;
+animation-duration: 2s;
+animation-name: aparecer;
+animation-delay: 2s;
+animation-direction: alternate;
+animation-iteration-count: infinite;
+}
+
+@keyframes aparecer {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+.conteiner__fonde{
+    background-color: rgb(189, 96, 96);
+}
+
+
+
+
+
+
+
+
 input{
     transition: all 1s;
 }
