@@ -1,0 +1,201 @@
+$color1: azure;
+
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    background-image: url(../img/ima14.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    .logo-container{
+        width: 4%;
+        .logo{
+            width: 100%;
+            margin: 0.5rem;
+            border-radius: 10%;
+    }
+}
+}
+
+nav {
+    ul{
+        display: flex;
+        gap: 1rem;
+        margin: 1rem;
+        li{
+            list-style: none;
+            font-size: 1.2rem;
+            font-weight: 600;
+            a{
+                text-decoration: none;
+                color: red;
+                &:hover{
+                    color: rgb(105, 7, 7);
+                }
+            }
+}
+}
+}
+.linkactive{
+    color: rgb(105, 7, 7);
+}   
+.banner{
+    background-image: url(../img/ima10.png);
+    padding: 6rem;
+    width: 75%;
+    margin: 2rem auto;
+    background-repeat: no-repeat;
+    background-size: cover;
+    h1{
+        color: rgb(255, 255, 255);
+        text-align: center;
+        font-size: 2rem;
+        letter-spacing: 0.4rem;
+    }
+}
+.description{
+    text-align:justify;
+    width: 70%;
+    margin: 1.5rem auto;
+}
+.about{
+    width: 80%;
+    margin: 0rem 2rem 0rem 2rem;
+    .about__container{
+        display: flex;
+        align-items: center;
+        gap: 2rem;
+        .juego{
+            width: 500px;
+            border-radius: 5%;
+}
+}
+}
+.about__container--reverse{
+    flex-direction: row-reverse;
+}
+
+
+
+@import  "_galeria";
+
+@import "_formulario";
+
+
+.sub3{
+    text-align: center;
+    font-size: 120px;
+    background-image: url(../img/ima14.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: $color1;
+    animation-duration: 2s;
+    animation-name: aparecer;
+    animation-delay: 2s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+    margin: 0%;
+}
+@keyframes aparecer {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+.conteiner__fonde{
+    background-color: rgb(189, 96, 96);
+}
+
+
+
+
+.sub4{
+    text-align: center;
+    font-size: 5rem;
+    background-image: url(../img/ima14.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: $color1;
+    animation-duration: 2s;
+    animation-name: aparecer;
+    animation-delay: 2s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+    margin: 0%;
+}
+table{
+    border-collapse: collapse;
+}
+tr {
+    display: table-row;
+    animation: slide-down 0.3s ease-out;
+}
+@keyframes slide-down {
+    0% {
+    opacity: 0;
+    -webkit-transform: translateY(-100%);
+    }
+    100% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+    }
+}
+
+
+
+
+.sub5{
+    text-align: center;
+    font-size: 5rem;
+    background-image: url(../img/ima14.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color:$color1;
+    animation-duration: 2s;
+    animation-name: aparecer;
+    animation-delay: 2s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+    margin: 0%;
+}
+.jumbotron{
+    background-color: rgb(233, 233, 233);
+}
+.row{
+    margin: 0%;
+}
+.fonde{
+    background-color: rgb(255, 255, 255);
+}
+input{
+    transition: all 1s;
+}
+input:focus{
+    font-size: 30px;
+}
+.form__input--submit:hover{
+    background-color: rgb(117, 81, 12);
+}
+
+
+
+
+footer{
+    background-color: black;
+    padding: 1.5rem;
+    h4{
+        color: $color1;
+        font-weight: 600;
+        text-align: center;
+        font-size: 0.8rem;
+    }
+}
+
