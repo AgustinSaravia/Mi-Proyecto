@@ -33,7 +33,7 @@ nav {
             font-size: 1.2rem;
             font-weight: 600;
             a{
-                text-decoration: none;
+                text-decoration:none;
                 color: red;
                 &:hover{
                     color: rgb(105, 7, 7);
@@ -42,8 +42,28 @@ nav {
 }
 }
 }
+
+$letras: (
+    let1: serif,
+    let2: sans-serif,
+    let3: cursive,
+    let4: fantasy,
+    let5: monospace,
+);
+
+@each $let, $font in $letras {
+    .btn--#{$let} {
+        box-shadow: 0 0 10px rgb(243, 5, 5);
+        font-family: $let;
+    }
+    
+}
+
+
+
 .linkactive{
     color: rgb(105, 7, 7);
+    box-shadow: 0 0 20px rgb(150, 24, 2);
 }   
 .banner{
     background-image: url(../img/ima10.png);
@@ -89,18 +109,7 @@ nav {
 
 
 .sub3{
-    text-align: center;
-    font-size: 120px;
-    background-image: url(../img/ima14.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    color: $color1;
-    animation-duration: 2s;
-    animation-name: aparecer;
-    animation-delay: 2s;
-    animation-direction: alternate;
-    animation-iteration-count: infinite;
-    margin: 0%;
+    @extend .sub;
 }
 @keyframes aparecer {
     0%{
@@ -114,23 +123,26 @@ nav {
     background-color: rgb(189, 96, 96);
 }
 
-
+@mixin sizen ($text, $tam) {
+    text-align: $text;
+    font-size: $tam;
+}
 
 
 .sub4{
-    text-align: center;
-    font-size: 5rem;
+    @include sizen(center, 120px );
     background-image: url(../img/ima14.png);
     background-repeat: no-repeat;
     background-size: cover;
     color: $color1;
     animation-duration: 2s;
-    animation-name: aparecer;
+    animation-name: aparecerr;
     animation-delay: 2s;
     animation-direction: alternate;
     animation-iteration-count: infinite;
-    margin: 0%;
+    margin: 0%;;
 }
+
 table{
     border-collapse: collapse;
 }
@@ -153,24 +165,25 @@ tr {
 
 
 .sub5{
-    text-align: center;
-    font-size: 5rem;
+    @include sizen(center, 120px);
     background-image: url(../img/ima14.png);
     background-repeat: no-repeat;
     background-size: cover;
-    color:$color1;
+    color: $color1;
     animation-duration: 2s;
-    animation-name: aparecer;
+    animation-name: aparecerr;
     animation-delay: 2s;
     animation-direction: alternate;
     animation-iteration-count: infinite;
     margin: 0%;
 }
+
 .jumbotron{
     background-color: rgb(233, 233, 233);
 }
 .row{
     margin: 0%;
+    justify-content: center;
 }
 .fonde{
     background-color: rgb(255, 255, 255);

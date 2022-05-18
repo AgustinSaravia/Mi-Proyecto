@@ -1,16 +1,5 @@
 .sub2{
-    text-align: center;
-    font-size: 120px;
-    background-image: url(../img/ima14.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    color: azure;
-    animation-duration: 2s;
-    animation-name: aparecerr;
-    animation-delay: 2s;
-    animation-direction: alternate;
-    animation-iteration-count: infinite;
-    margin: 0%;
+    @extend .sub;
 }
 
 @keyframes aparecerr {
