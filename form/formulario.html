@@ -10,36 +10,44 @@
     <title>Formulario y consulta de servicios</title>
 </head>
 <body>
-    <h2 class="sub2">Formulario</h2>
-    <main class="fondito">
-    <div class="formulario">
-        <h2 class="formulario__titulo">CONTACTAME</h2>
-        <form action="#" class="form">
-            <label for="nombre" class="form__label">Nombre</label>
-            <input type="text" name="nombre" id="nombre" class="form__input">
-
-            <label for="nombre" class="form__label">Apellido</label>
-            <input type="text" name="nombre" id="apellido" class="form__input">
-
-            <label for="tel" class="form__label">Telefono</label>
-            <input type="tel" name="tel" id="tel" class="form__input">
-
-            <label for="mail" class="form__label">Mail</label>
-            <input type="email" name="mail" id="mail" class="form__input">
-
-            <label for="mensaje" class="form__label">Mensaje...</label>
-            <textarea name="mensaje" id="mensaje" class="form__textarea"></textarea>
-
-            <input type="submit" value="Enviar" class="form__input from__input--submit" >
-        </form>
+    <div class="container-fluid p-0">
+        <h2 class="sub2"> Galeria de Cs Go</h2>
     </div>
-    </main>
-    
+    <div class="container-fluid p-0 text-center">
+        <div class="jumbotron bg-dark jumbotron-fluid text-white m-0">
+        <h1>Formulario</h1>      
+        <p>Para poder consultar nuestros servicios y contactar con usted necesitaremos que se registre y complete este formulario. Muchas gracias.</p>
+        </div>
+    <section class="container-fluid bg">
+        <div class="row justify-content-center">
+            <div class="col-12 col-sm-12 col-md-6 col-lg-4">
+                <form class="form-container">
+                    <div class="form-group">
+                    <label for="exampleInputEmail1">Email</label>
+                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                    <small id="emailHelp" class="form-text text-muted">Inserte un correo electronico.</small>
+                    </div>
+                    <div class="form-group">
+                    <label for="exampleInputPassword1">Contraseña</label>
+                    <input type="password" class="form-control" id="exampleInputPassword1">
+                    </div>
+                    <div class="form-group form-check">
+                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                    <label class="form-check-label" for="exampleCheck1">Proteger datos</label>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-block">Enviar</button>
+                </form>
+            </div>
+        </div>
+    </section>
     <footer>
         <h4>Copyright-Todos los derechos reservados</h4>
         <a href="../index.html">Volver hacia atras</a>
     </footer>
 
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.min.js" integrity="sha384-VHvPCCyXqtD5DqJeNxl2dtTyhF78xXNXdkwX1CZeRusQfRKp+tA7hAShOK/B/fQ2" crossorigin="anonymous"></script>
     <script src="js/wow.min.js"></script>
             <script>
             new WOW().init();
