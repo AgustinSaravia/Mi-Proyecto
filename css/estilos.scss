@@ -130,7 +130,7 @@ $letras: (
 
 
 .sub4{
-    @include sizen(center, 120px );
+    @include sizen(center, 5rem );
     background-image: url(../img/ima14.png);
     background-repeat: no-repeat;
     background-size: cover;
@@ -165,7 +165,7 @@ tr {
 
 
 .sub5{
-    @include sizen(center, 120px);
+    @include sizen(center, 5rem);
     background-image: url(../img/ima14.png);
     background-repeat: no-repeat;
     background-size: cover;
